@@ -161,4 +161,9 @@ footer {
     content: "";
     display: table;
     clear: both;
+} 
+
+.resize {
+    height: 100px;
+    width: 100px;
 }
