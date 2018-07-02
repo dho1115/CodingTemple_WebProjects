@@ -92,6 +92,10 @@ header a {
     color: black;
 }
 
+img {
+    max-width: 100%;
+} 
+
 .large {
     size: 3em;
 } 
@@ -110,7 +114,7 @@ span[coding = "temple"] {
 } 
 
 .container {
-    width: 960px;
+    width: 76.96%;
     padding-right: 30px;
     padding-left: 30px;
     margin: auto;
@@ -130,7 +134,7 @@ li a {
 }
 
 footer {
-    background-color: gray;
+    background-color: grey;
     border-top: 1px solid rgba(0,0,0,0,0.85);
     box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.8);
 } 
@@ -152,7 +156,7 @@ footer {
 } 
 
 .col-2-3 {
-    /*float:left;*/
+    float:left;
     padding-left: 10px;
     padding-right: 10px;
     width: 67%
@@ -168,4 +172,25 @@ footer {
 .resize {
     height: 100px;
     width: 100px;
+} 
+
+/*when the max with exceeded, the background color: red is shut off. Works
+like an "if/then".*/
+
+@media screen and (min-width: 640px) {
+    body{
+        background-color: pink;
+    }
+} 
+
+@media screen and (max-width: 900px) {
+    body {
+        background-color: lightgreen;
+    }
+} 
+
+@media screen and (max-width: 780px) {
+    .hidden-small {
+        display: block;
+    }
 }
