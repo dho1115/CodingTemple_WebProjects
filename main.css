@@ -14,8 +14,17 @@ format("open type")} */
     box-sizing: border-box;
 } 
 
+.flex {
+    display: flex;
+    flex-direction: row;
+} 
+
+nav {
+    float: right;
+}
+
 html {
-    background: rgb(216, 204, 204);
+    /* background: rgb(216, 204, 204); */
     font-size: 20px;
     /*Arial will be used first and then Helvetica and then sans-serif*/
     font-family: Arial, Helvetica, monospace;
@@ -114,10 +123,15 @@ span[coding = "temple"] {
 } 
 
 .container {
-    width: 76.96%;
+    width: 95%;
     padding-right: 30px;
     padding-left: 30px;
     margin: auto;
+} 
+
+.row {
+    display: flex;
+    flex-direction: column;
 } 
 
 .alt-link {
@@ -156,7 +170,7 @@ footer {
 } 
 
 .col-2-3 {
-    float:left;
+    float:right;
     padding-left: 10px;
     padding-right: 10px;
     width: 67%
@@ -179,7 +193,7 @@ like an "if/then".*/
 
 @media screen and (min-width: 640px) {
     body{
-        background-color: pink;
+        background-color: whitesmoke;
     }
 } 
 
