@@ -43,6 +43,10 @@ h1 {
 
 h3 {
     color: floralwhite;
+    animation-name: linkhover;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
 }
 
 p:first-line {
@@ -99,6 +103,10 @@ header li {
 
 header a {
     color: black;
+} 
+
+header {
+    align-items: center;
 }
 
 img {
@@ -188,6 +196,33 @@ footer {
     width: 100px;
 } 
 
+/*animation*/
+@keyframes linkhover {
+        from {
+            color: blue;
+        } 
+    
+        to {
+            color: red;
+        }
+    } 
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    } 
+
+    to {
+        opacity: 1;
+    }
+}
+
+.one {
+    animation-name: fade;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+}
 /*when the max with exceeded, the background color: red is shut off. Works
 like an "if/then".*/
 
